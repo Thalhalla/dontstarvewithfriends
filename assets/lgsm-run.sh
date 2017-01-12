@@ -2,10 +2,10 @@
 
 /assets/config.sh
 cd /home/steam
-/opt/steamer/dstserver start
+./dstserver start
 sleep 10
 while [ 1 ]
 do
-    /opt/steamer/dstserver monitor
+    ./dstserver monitor
     sleep 300
 done
