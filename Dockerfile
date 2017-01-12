@@ -12,12 +12,11 @@ COPY assets /assets
 RUN chmod 755 /assets/*.sh && \
 chmod 755 /assets/steamer.txt && \
 chmod 755 /assets/dstserver && \
+cp /assets/dstserver /opt/steamer/ && \
 chown -R steam. /home/steam && \
 chown -R steam. /opt/steamer
 
 USER steam
-WORKDIR /opt/steamer
-# RUN wget -q https://gameservermanagers.com/dl/dstserver && chmod +x dstserver
 WORKDIR /home/steam
 
 CMD ["/bin/bash",  "/assets/valve-start.sh"]
