@@ -6,5 +6,5 @@ cd /opt/steamer
 chmod +x ./dstserver
 
 cd /home/steam
-/opt/steamer/dstserver install
+/opt/steamer/dstserver auto-install
 sudo chown -R steam:steam /home/steam
