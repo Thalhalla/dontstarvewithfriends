@@ -1,7 +1,7 @@
 FROM thalhalla/steamer
 MAINTAINER Josh Cox <josh 'at' webhosting coop>
 
-ENV DONTSTARVE_UPDATED 20170104
+ENV DONTSTARVE_UPDATED 20170111
 
 # override these variables in with the prompts
 ENV STEAM_GID 343050
